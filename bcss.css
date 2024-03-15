@@ -296,5 +296,9 @@ html#sceditor_smilies ::-webkit-scrollbar {
 }
 
 html#sceditor_smilies:: -webkit-scrollbar-thumb {
-    background: linear-gradient(40deg, var(--gradient1), var(--gradient2));
+    background: vvar(--accent-1);
+}
+.h3, h3 {
+    padding: 0;
+    margin: 0;
 }
