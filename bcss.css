@@ -334,3 +334,47 @@ a.button1, input.button1, a.button2, input.button2, button.button2, .external-mo
     float: unset;
     margin-left: unset;
     text-shadow: unset;}
+.sceditor-container .sceditor-button {
+    border: var(--border)!important;
+}
+.sceditor-button.active, .sceditor-button:active, .sceditor-button:hover {
+    background: var(--accent)!important;
+    color: var(--background-1)!important;
+}
+.sceditor-container .sceditor-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-indent: 0px;
+    color: var(--accent);
+    border: var(--border);
+    margin: 0px 2px;
+    border: var(--border)!important;
+    background:var(--background-1)!important;
+    padding:5px;
+}
+.sceditor-toolbar {
+    padding: 20px!important;
+    background: var(--background-2)!important;
+    border-bottom: var(--border)!important;
+}
+.sceditor-group {
+    background: transparent!important;
+    border-bottom: 0px!important;
+}
+.sceditor-container iframe, .sceditor-container textarea {
+    background: var(--background-1)!important;
+    color: var(--color-text)!important;
+    font-family: var(--font-text)!important;
+}
+.sceditor-container.ltr.sourceMode {
+    background: var(--background-1);
+    border: var(--border)!important;
+    color: var(--color);
+}
+
+.sceditor-group i {
+    color: var(--color-icons);
+    font-size: 12px;
+    display: block;
+}
