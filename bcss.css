@@ -6,6 +6,11 @@ div#main-content > div[style="overflow:visible"] {display: none;}
     background: var(--accent)!important;
     color: var(--background-1)!important;
 }
+h2 {
+    margin: 0;
+    font-size: unset;
+    font-weight: unset;
+}
 #s-m-t-tooltip {
     max-width: 350px;
     z-index: 10;
