@@ -69,7 +69,7 @@ select {
 }
 
 input[type="checkbox" i] {
-    accent-color: var(--accent-1);
+    accent-color: var(--accent);
     background-color: field;
     border: var(--border);
 }
@@ -77,8 +77,8 @@ input[type="checkbox" i] {
     color: #!important;
     font-family: var(--font-1);
 }
-a, a:visited, a:active, a:focus{color:var(--accent-1);}
-::selection{background:var(--accent-1); color:#fafafa;}
+a, a:visited, a:active, a:focus{color:var(--accent);}
+::selection{background:var(--accent); color:#fafafa;}
 #fa_toolbar{display:none;}
 div#main {overflow: visible!important;}
 ::-webkit-scrollbar {
@@ -90,7 +90,7 @@ div#main {overflow: visible!important;}
 .jqmWindow h1 {
     font-family: var(--font-2);
     font-weight: 900;
-    color: var(--accent-1);
+    color: var(--accent);
     border-bottom: var(--border);
     padding: 10px;
 }
@@ -126,7 +126,7 @@ input:focus-visible {
 }
 #cp-main {
     border: var(--border);
-    border-color: var(--accent-1);
+    border-color: var(--accent);
     margin: 10px;
 }
 dt label{font-weight:400;}
@@ -151,7 +151,7 @@ fieldset.submit-buttons {
     border-radius: 3px;
     font-size: 12px;
     font-weight: 500;
-    color: var(--accent-1);
+    color: var(--accent);
 }
  .pagination span strong, .pagination span a:link:not(.pag-img) {
     display: inline-flex;
@@ -164,7 +164,7 @@ fieldset.submit-buttons {
     border-radius: 3px;
     font-size: 12px;
     font-weight: 500;
-    color: var(--accent-1);
+    color: var(--accent);
 }
 .pagination > span > strong {
     color: var(--color-icons);
@@ -226,7 +226,7 @@ h1.page-title {
     color: #fafafa;
     padding: 10px!important;
     background: var(--accent-2);
-    border-bottom: 1px solid var(--accent-1)!important;
+    border-bottom: 1px solid var(--accent)!important;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: .85rem;
@@ -256,7 +256,7 @@ fieldset dl {
     padding: 4px 0;
 }
 #cp-main .panel:not(:last-child) {
-    border-bottom: 1px solid var(--accent-1);
+    border-bottom: 1px solid var(--accent);
     margin-bottom: 0;
 }
 
@@ -296,7 +296,7 @@ html#sceditor_smilies ::-webkit-scrollbar {
 }
 
 html#sceditor_smilies:: -webkit-scrollbar-thumb {
-    background: vvar(--accent-1);
+    background: vvar(--accent);
 }
 .h3, h3 {
     padding: 0;
