@@ -313,8 +313,8 @@ a.button1, input.button1, a.button2, input.button2, button.button2, .external-mo
     background-position: top;
     overflow: visible;
     text-transform: uppercase;
-    font-size: var(--font-boton) !important;
-    font-size: .75rem;
+    font-family: var(--font-boton) !important;
+    font-size: .75rem !important;
     font-weight: 600;
     letter-spacing: .5px;
 }
