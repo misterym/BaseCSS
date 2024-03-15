@@ -331,7 +331,4 @@ a.button1, input.button1, a.button2, input.button2, button.button2, .external-mo
     display: unset;
     float: unset;
     margin-left: unset;
-    color: unset;
-    text-shadow: unset;
-    font-size: unset;
-}
+    text-shadow: unset;}
