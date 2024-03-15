@@ -318,3 +318,20 @@ a.button1, input.button1, a.button2, input.button2, button.button2, .external-mo
     font-weight: 600;
     letter-spacing: .5px;
 }
+.rep-button, .rep-button:focus, .rep-button:active {
+    float: unset;
+    box-shadow: unset;
+    padding: unset !important;
+    margin: 0 !important;
+    margin-top: 0 !important;
+}
+.rep-button i, .rep-button svg {
+    margin-right: unset;
+    margin-top: unset;
+    display: unset;
+    float: unset;
+    margin-left: unset;
+    color: unset;
+    text-shadow: unset;
+    font-size: unset;
+}
