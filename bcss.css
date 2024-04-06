@@ -222,17 +222,25 @@ li.activetab a {
     margin-top: 0px;
     padding: 0;
 }
-h1.page-title {
-    margin: 0!important;
-    font-family: var(--font-1);
-    font-weight: 500;
-    color: #fafafa;
-    padding: 10px!important;
-    background: var(--accent-2);
-    border-bottom: 1px solid var(--accent)!important;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: .85rem;
+.panel {
+    border: var(--border);
+    padding: 0;
+}
+h1.page-tit {
+    margin: 0 !important;
+    border-bottom: var(--border);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 40px;
+}
+.panel p {
+    padding: 30px;
+    font-size: .8rem;
+    line-height: 100%;
+    margin-bottom: 0;
 }
 .panel > .inner > fieldset > dl > dd > input {
     margin-bottom: 15px;
