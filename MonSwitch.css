@@ -81,13 +81,12 @@
     position: relative;
     display: grid;
     place-items: center;
-    background-color: #242424;
+    background-color: var(--background-1);
     width: 40px;
     height: 40px;
     border-radius: 8px;
     cursor: pointer;
     transition: border-radius 128ms var(--ease);
-    margin-left: 5px;
 }
 /* Rond au survol */
 .switcheroo__squircle:hover {
@@ -105,7 +104,7 @@
     transition: border-radius 128ms var(--ease);
     position: relative;
     mix-blend-mode: luminosity;
-    opacity: .5;
+    opacity: .9;
 }
 /* Avatar du compte connecté */
 .switcheroo__squircle.active, .switcheroo__squircle.active img {
