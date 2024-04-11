@@ -271,9 +271,10 @@
 /* button : ajouter un compte */
 .switcheroo__squircle--button {
     transition: border-radius 128ms var(--ease);
-    color: var(--acento1);
-    background: var(--fondo1);
+    color: var(--accent);
+    background: var(--background-1);
     margin-left: 5px;
+    border: var(--border);
 }
 /* MODAL : FENETRE DE CONNEXION --- */
 
