@@ -1,18 +1,17 @@
 /*** ------------------------------- ***/
 /*** SWITCHEROO - Par Monomer ------ ***/
 /*** Gestionnaire de multicompte --- ***/
-
 .switcheroo {
     --text: var(--color);
-    --red: #D31141;
+    --red: var(--accent);
     --link: #000;
-    --light: #FFF;
-    --lighter: #fafafa;
+    --light: #ccc;
+    --lighter: #eee;
     --grey: #F4F4F4;
     --greyer: #E5E5E5;
     --border: var(--border);
     --font: 'poppins';
-    --gap-size: 10px;
+    --gap-size: 5px;
     --ease: cubic-bezier(0.4, 0.0, 0.2, 1);
     --ease-bounce: cubic-bezier(0.43, 0.09, 0.38, 2.56);
 }
@@ -93,9 +92,9 @@
 /* Rond au survol */
 .switcheroo__squircle:hover {
     border-radius: 6px;
-    background: var(--acento1);
+    background: var(--accent);
+    color: #ccc;
 }
-
 /* Image de l'avatar */
 .switcheroo__avatar img {
     width: 40px;
@@ -277,121 +276,122 @@
     background: var(--fondo1);
     margin-left: 5px;
 }
-.switcheroo__squircle--button:hover { color: var(--color);}
 /* MODAL : FENETRE DE CONNEXION --- */
 
 /* Fond de l'afficage connexion */
 .monomer-overlay {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.2s opacity ease;
-  background: #00000069;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s opacity ease;
+    background: #000000c9;
+    backdrop-filter: blur(6px);
 }
-
 /* Boîte de connexion */
 .monomer-modal {
-  position: fixed;
-  z-index: 999;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  width: 94%;
-  padding: 24px 20px;
-  transition: 0.2s opacity ease;
-  transform: translate(-50%, -50%);
-  border-radius: 5px;
-  background: var(--fondot);
-  border: var(--border);
-  font-family:Lato, sans-serif;
-  var(--color);
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    font-family: poppins;
+    opacity: 0;
+    width: 94%;
+    padding: 14px 15px;
+    transition: 0.2s opacity ease;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background: var(--background-t);
+    border: var(--border);
 }
 
 /* Formulaire */
 .switcheroo__form {
-  padding: 48px;
-  background: #0d0d0d;
-  border-radius: 5px;
+    padding: 20px;
+    background: var(--background-2);
+    border-radius: 5px;
+    border: var(--border);
+}
+/* Champs à remplir */
+.switcheroo__form-row:not(:last-child) {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    border: var(--border);
+    background: var(--background-1);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    overflow: hidden;
 }
 
-/* Champs à remplir */
-.switcheroo__form-row {
-  display: flex;
-  flex-flow: column;
-  align-items: flex-start;
-  margin-bottom: 16px;
-}
 
 /* Nom du champs */
 .switcheroo__form-label {
-  margin-bottom: 8px;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
+    text-transform: uppercase;
+    width: 105%;
+    background: var(--gradient);
+    color: #ccc;
+    font-size: .8rem;
+    font-weight: 500;
+    margin: -10px -10px 10px;
+    padding: 7px;
 }
-
 /* Zone de texte */
 .switcheroo__form-input {
-  padding: 6px;
-  font-size: 16px;
-  border-radius: 4px;
-  width: 100%;
-  background-color: #000000;
-  border: var(--border)!important;
-  border-bottom: 3px solid #521e1e!important;
-  color: var(--text);
-  cursor: text;
+    padding: 6px;
+    font-size: .9rem;
+    border-radius: 4px;
+    width: 96%;
+    background-color: var(--background-2);
+    border: var(--border) !important;
+    cursor: text;
 }
 
 /* Bouton de connexion */
 .switcheroo__form-button {
-  border-radius: 8px;
-  padding: 4px 6px;
-  border: none;
-  outline: none;
-  box-shadow: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  align-self: flex-end;
-  background: var(--fondo2);
-  border: var(--border);
-  cursor: pointer;
-   color: #bdbaba;
-  font-family: Lato, sans-serif;
+    border-radius: var(--border-radius);
+    background: var(--accent);
+    color: #ccc;
+    border: var(--border);
+    transition: .3s ease-in;
+    width: 100%;
+    font-family: var(--font-boton);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    padding: 8px 10px;
 }
-
 .switcheroo__form-button:hover {
-  border: 1px solid transparent;
-  background: var(--text);
-  color: var(--light);
+    background: var(--gradient);
 }
-
 .monomer-modal.monomer-open, .monomer-overlay.monomer-open {opacity: 1;}
 
 /* Fermer la boîte de connexion */
 .monomer-close {
-  font-size: 20px;
-  display: grid;
-  place-items: center;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: -7px;
-  right: -7px;
-  padding: 5px;
-  cursor: pointer;
-  color: #fff;
-  border: 0;
-  outline: none;
-  background: #7c2424;
-  border-radius: 50%;
-  padding: 0;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    padding: 5px;
+    cursor: pointer;
+    color: #fff;
+    border: 0;
+    outline: none;
+    background: var(--accent);
+    border-radius: 50%;
+    padding: 0;
+    border: var(--border);
 }
 .monomer-close:hover {
-  background: var(--text);
+  background: var(--background-1);
   font-weight: 700;
 }
