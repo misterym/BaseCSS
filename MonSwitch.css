@@ -272,9 +272,7 @@
 .switcheroo__squircle--button {
     transition: border-radius 128ms var(--ease);
     color: var(--accent);
-    background: var(--background-1);
-    margin-left: 5px;
-    border: var(--border);
+    background: var(--background-1);    border: var(--border);
 }
 /* MODAL : FENETRE DE CONNEXION --- */
 
