@@ -173,17 +173,21 @@
 
 /* Conteneur du pseudo */
 .switcheroo__popper {
-  background-color: #0c0c0c;
-  padding: 0.68rem 1rem;
-  position: absolute;
-  width: -webkit-max-content;
-  width: max-content;
-  border-radius: 4px;
-  z-index: 0;
-  opacity: 0;
-  transition: opacity 64ms var(--ease), transform 128ms var(--ease-bounce);
-  pointer-events: none;
-  color: #fff;
+    text-align: center;
+    background-color: var(--accent);
+    padding: 8px 20px;
+    width: 120px;
+    position: absolute;
+    border-radius: 4px;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 64ms var(--ease), transform 128ms var(--ease-bounce);
+    pointer-events: none;
+    color: #ccc;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .67rem;
+    line-height: 100%;
 }
 
 /* Conteneur du pseudo: si vertical */
@@ -195,22 +199,20 @@
 }
 /* Conteneur du pseudo : si horizontal */
 .switcheroo[direction="horizontal"] .switcheroo__popper {
-  top: 155%;
-  left: 50%;
-  transform-origin: top;
-  transform: translateX(-50%) scale(0.98);
+    top: 155%;
+    left: 167%;
+    transform-origin: top;
+    transform: translateX(-50%) scale(0.98);
 }
-
 /* Flèche tooltip */
 .switcheroo__popper:before {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  background-color: #0c0c0c;
-  z-index: -1;
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: var(--accent);
+    z-index: -1;
 }
-
 /* Flèche tooltip : si vertical */
 .switcheroo[direction="vertical"] .switcheroo__popper:before {
   left: -2px;
