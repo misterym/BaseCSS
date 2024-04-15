@@ -162,8 +162,8 @@ fieldset.submit-buttons {
 }
  .pagination span strong, .pagination span a:link:not(.pag-img) {
     display: inline-flex;
-    width: 25px;
-    height: 25px;
+    width: 18px;
+    height:18px;
     border: var(--border);
     align-items: center;
     justify-content: center;
