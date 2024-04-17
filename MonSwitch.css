@@ -199,8 +199,8 @@
 }
 /* Conteneur du pseudo : si horizontal */
 .switcheroo[direction="horizontal"] .switcheroo__popper {
-    top: 155%;
-    left: 167%;
+    top: 120%;
+    left: 190%;
     transform-origin: top;
     transform: translateX(-50%) scale(0.98);
 }
@@ -212,6 +212,7 @@
     height: 24px;
     background-color: var(--accent);
     z-index: -1;
+    display:none;
 }
 /* Flèche tooltip : si vertical */
 .switcheroo[direction="vertical"] .switcheroo__popper:before {
